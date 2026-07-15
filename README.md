@@ -11,7 +11,7 @@ balance that persists in your browser.
 ## Why this exists
 
 A small portfolio project to demonstrate frontend fundamentals without
-leaning on a UI kit: game logic (card counting, dealer AI, wheel physics),
+leaning on a UI kit: game logic (card counting, dealer , wheel physics),
 shared state via context, CSS design tokens, and a from-scratch visual
 identity.
 
