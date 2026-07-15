@@ -1,0 +1,18 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+web_modules/
+
+# Environment variables (Crucial if you add security/auth later)
+.env
+.env.local
+.env.development.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Mac/Windows system files
+.DS_Store
+Thumbs.db

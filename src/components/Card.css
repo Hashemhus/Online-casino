@@ -1,0 +1,82 @@
+.playing-card {
+  position: relative;
+  width: 64px;
+  height: 90px;
+  border-radius: 6px;
+  background: var(--cream);
+  color: var(--ink);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  flex-shrink: 0;
+  animation: deal-in 0.32s cubic-bezier(0.2, 0.8, 0.3, 1) both;
+}
+
+@keyframes deal-in {
+  from {
+    opacity: 0;
+    transform: translate(-70px, -110px) rotate(-18deg) scale(0.7);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .playing-card {
+    animation: none;
+  }
+}
+
+.playing-card--red {
+  color: var(--burgundy);
+}
+
+.playing-card--black {
+  color: #1a1a1a;
+}
+
+.playing-card__corner {
+  position: absolute;
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 1.05;
+  text-align: center;
+}
+
+.playing-card__corner--top {
+  top: 4px;
+  left: 5px;
+}
+
+.playing-card__corner--bottom {
+  bottom: 4px;
+  right: 5px;
+  transform: rotate(180deg);
+}
+
+.playing-card__pip {
+  font-size: 1.6rem;
+}
+
+.playing-card--back {
+  background: linear-gradient(135deg, var(--burgundy), var(--burgundy-bright));
+  border: 2px solid var(--gold);
+}
+
+.playing-card__back-pattern {
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  border: 1px solid rgba(237, 230, 214, 0.35);
+  border-radius: 3px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(237, 230, 214, 0.08) 0px,
+    rgba(237, 230, 214, 0.08) 4px,
+    transparent 4px,
+    transparent 8px
+  );
+}
