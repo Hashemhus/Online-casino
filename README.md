@@ -4,7 +4,7 @@ A play-money casino built with React, TypeScript, and Vite. No real currency,
 no accounts, no payments — just blackjack and roulette with a shared chip
 balance that persists in your browser.
 
-**[Live demo →](#)** _(add your deployed link here)_
+
 
 ![status](https://img.shields.io/badge/status-for%20fun-c9a227)
 
